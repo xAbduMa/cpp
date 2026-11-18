@@ -67,6 +67,7 @@ echo set BASE_FLAGS=-std=c++14 -Wall -Wextra -MMD -MP
 echo.
 echo :: List library names here ^(e.g., -lmingw32 -lSDL2main -lSDL2^)
 echo set LIBS=
+echo set LDFLAGS=-static-libgcc -static-libstdc++
 echo.
 echo :: ==========================================
 echo :: Parse Arguments ^(debug, release, run, clean, rebuild^)

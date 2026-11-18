@@ -16,6 +16,7 @@ set BASE_FLAGS=-std=c++14 -Wall -Wextra -MMD -MP
 
 :: List library names here (e.g., -lmingw32 -lSDL2main -lSDL2)
 set LIBS=
+set LDFLAGS=-static-libgcc -static-libstdc++
 
 :: ==========================================
 :: Parse Arguments (debug, release, run, clean, rebuild)
