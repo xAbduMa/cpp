@@ -1,4 +1,5 @@
 #include <iostream>
+#include <iomanip>
 #include <climits>
 #include <vector>
 using namespace std;
@@ -207,38 +208,99 @@ int main() {
 
 	// Exercise 14
 	// -----------
-	const int dollar_value {100};
-	const int quarter_value {25};
-	const int dime_value {10};
-	const int nickel_value {5};
+	// const int dollar_value {100};
+	// const int quarter_value {25};
+	// const int dime_value {10};
+	// const int nickel_value {5};
 	
-	int change_amount {};
+	// int change_amount {};
 	
-	cout << "Enter an amount in cents: ";
-	cin >> change_amount;
+	// cout << "Enter an amount in cents: ";
+	// cin >> change_amount;
 	
-	int balance {}, dollars {}, quarters {}, dimes {}, nickels {}, pennies {};
+	// int balance {}, dollars {}, quarters {}, dimes {}, nickels {}, pennies {};
 	
-	dollars = change_amount/dollar_value;
-	balance = change_amount%dollar_value;
+	// dollars = change_amount/dollar_value;
+	// balance = change_amount%dollar_value;
 	
-	quarters = balance/quarter_value;
-	balance = balance%quarter_value;
+	// quarters = balance/quarter_value;
+	// balance = balance%quarter_value;
 	
-	dimes = balance/dime_value;
-	balance = balance%dime_value;
+	// dimes = balance/dime_value;
+	// balance = balance%dime_value;
 	
-	nickels  = balance/nickel_value;
-	balance = balance%nickel_value;
+	// nickels  = balance/nickel_value;
+	// balance = balance%nickel_value;
 	
-	pennies = balance;
+	// pennies = balance;
 	
-	cout << "\nYou can provide this change as follows: " << endl;
-	cout << dollars << " dollar" << endl;
-	cout << quarters << " quarter" << endl;
-	cout << dimes << " dime" << endl;	
-	cout << nickels << " nickel" << endl;	
-	cout << pennies << " penny" << endl;
+	// cout << "\nYou can provide this change as follows: " << endl;
+	// cout << dollars << " dollar" << endl;
+	// cout << quarters << " quarter" << endl;
+	// cout << dimes << " dime" << endl;	
+	// cout << nickels << " nickel" << endl;	
+	// cout << pennies << " penny" << endl;
+
+	// Exercise 15
+	// -----------
+	// int num {};
+	// const int min {10};
+	// const int max {100};
+	
+	// cout << "Enter a number between " << min << " and " << max << ": ";
+	// cin >> num;
+	
+	// if (num >= min){
+		// cout <<"\n========= if statement1 ========" << endl;
+		// cout << num << " is greater than or equal to " << min << endl;
+		
+		// int diff {num-min};
+		// cout << num << " is " << diff << " greater than " << min << endl;
+	// }
+	
+	// if (num <= max){
+		// cout <<"\n========= if statement2 ========" << endl;
+		// cout << num << " is less than or equal to " << max << endl;
+		
+		// int diff {max-num};
+		// cout << num << " is " << diff << " less than " << max << endl;
+	// }
+	
+	// if (num >= min && num <= max){
+		// cout <<"\n========= if statement3 ========" << endl;
+		// cout << num << " is in range " << endl;
+		// cout << "You should have seen results from if statement1 & 2" << endl;
+	// }	
+
+	// if (num == min || num == max){
+		// cout <<"\n========= if statement4 ========" << endl;
+		// cout << num << " is right on the boundary " << endl;
+		// cout << "You should have seen results from if statement1, 2 & 3" << endl;
+	// }	
+
+	// Exercise 16
+	// -----------
+	// int num {};
+	// const int target {10};
+	
+	// cout << "Enter a number and I'll compare it to " << target << ": ";
+	
+	// cin >> num;
+	
+	// if (num >= target){
+		// cout << "\n===========================" << endl;
+		// cout << num << " is greater than or equal to " << target << endl;
+		// int diff {num-target};
+		// cout << num << " is " << diff << " greater than " << target << endl;
+	// } else {
+		// cout << "\n===========================" << endl;
+		// cout << num << " is less than " << target << endl;
+		// int diff {target-num};
+		// cout << num << " is " << diff << " less than " << target << endl;		
+	// }
+	// Exercise 17
+	// -----------
+	
 	cout << endl;
     return 0;
 }
